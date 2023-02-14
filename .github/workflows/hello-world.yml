@@ -1,0 +1,12 @@
+name: dougs cool first action
+
+run-name: ${{ github.actor }} is a p cool dude, man!
+
+on: push
+
+jobs:
+  sayHi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "hello world"
